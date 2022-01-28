@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>3-Layer-Cake Prototype :: Blank Page Template</title>
+<style media="all"> @import url(css/switch.css); </style>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/structure.css">
+<style>
+/* add page-specific styles here as needed */
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="js/switch.js"></script>
+<script src="js/global.js"></script>
+<script>
+	$(document).ready(setupThePage);
+</script>
+</head>
+
+<body class="sketchy">
+
+<header class="border x" style="background-image:none;">
+	<h1>Main Heading</h1>
+</header>
+
+<div id="content" class="x">
+	<nav class="border x">
+		<ul class="first">
+			<li class="firstitem"><a href="#">Item 1</a></li>
+			<li class="active"><a class="toplevel" href="#">Item 2</a>
+				<ul>
+					<li><a href="#">Item 2a</a></li>
+					<li class="secondlevel"><a href="#" class="active x">Item 2b (selected)</a></li>
+					<li><a href="#">Item 2c</a></li>
+					<li><a href="#">Item 2d</a></li>
+					<li><a href="#">Item 2e</a></li>
+					<li><a href="#">Item 2f</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Item 3</a></li>
+			<li><a href="#">Item 4</a></li>
+			<li><a href="#">Item 5</a></li>
+			<li><a href="#">Item 6</a></li>
+		</ul>
+	</nav>
+	
+	<article class="border x">
+		<h2>Headline</h2>
+		<div class="pic border x">
+			<p class="caption x">Image caption</p>
+		</div>
+		<p>Description - paragraph one.</p>
+		<p>Description - paragraph two.</p>
+	</article>
+
+</div>
+
+<footer class="border x">
+	<p>Footer with copyright statement and other fine print stuff.</p>
+</footer>
+
+<div id="panel">
+
+	<div id="switcher">
+		<form action="#">
+			<fieldset>
+				<select id="views">
+					<option value="sketchy">Sketchy view</option>
+					<option value="default">Design view</option>
+					<option value="annotations">Annotations view</option>
+				</select>
+			</fieldset>
+		</form>
+	</div>
+	
+	<div id="notes">
+		<h4>Page Annotations</h4>
+		<ol>
+			<li>Page heading, including company logo, which links back to the home page.</li>
+			<li>Email subscription form.  User enters email address, clicks on "Sign Up" button to be added to company mailing list.  Need to add form validation for blank or invalid email addresses; a customized error message should display upon submit in those instances.  If submission is succesful, display a confirmation message.</li>
+			<li>Main site navigation, present on every page.</li>
+			<li>Top-level navigation item.</li>
+			<li>Second-level navigation item.  This one is highlighted, as per styling (font color, nav item bar width).</li>
+			<li>Product title.  Should always match the title shown in the selected nav item, to the left.</li>
+			<li>Product image.  Picture of the specific cupcake flavor or style.</li>
+			<li>Product image caption.  Brief copy accompanying the photo.</li>
+			<li>Special offer module.  Element advertising any special offers with a title, brief description, and link to learn more.  Clicking on the link will expand the module, revealing the text of the offer details.</li>
+			<li>Footer bar.  Where the copyright statement and any other legal fine print should go.</li>
+		</ol>
+	</div>
+
+</div>
+
+</body>
+
+</html>

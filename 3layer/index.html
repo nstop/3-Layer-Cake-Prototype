@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>3-Layer-Cake Prototype: A Wireframe + Design + Annotations Framework</title>
+<link rel="stylesheet" href="../css/global.css">
+<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700&v2' rel='stylesheet' type='text/css'>
+<style>
+html,body {
+	margin: 0;
+	padding: 0;
+	background: #fefdee;
+	overflow-x: hidden;
+}
+
+div.header {
+    position: relative;
+    overflow-x: hidden;
+	margin-right: -20px;
+	margin-left: -20px;
+	padding: 20px 0 0 0;
+	text-align: center;
+	background: url(img/frosting.jpg) #664631 repeat top left;
+	-moz-box-shadow: 0 0 15px #664631;
+	-webkit-box-shadow: 0 0 15px #664631;
+	box-shadow: 0 0 15px #664631;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 450%;
+	font-family: 'Lobster Two', Helvetica, Arial;
+	text-shadow: -3px -3px 0 #333333;
+	color: #e8d89f;
+}
+
+h2 {
+	margin: 10px auto;
+	padding: 30px 0;
+	width: auto;
+	font-weight: normal;
+	background: rgba(102,70,49,.3);
+	color: #fbf6d7;
+}
+
+.slideshow {  
+	float: left;
+	width: 700px;  
+    height: 433px;
+    margin: 30px 0 10px 30px;
+} 
+ 
+.slideshow img { 
+    top: 0;
+    left: 0; 
+    padding: 0;
+    width: 700px;
+    height: 433px;
+}
+
+.info {
+	float: right;
+	max-width: 400px;
+    margin: 30px;
+    padding: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	text-align: center;
+	background: #664631;
+	color: #fbf6d7;
+}
+
+.info h3 {
+	margin: -10px 0 0 0;
+	padding: 0;
+	font-size: 150%;
+	font-weight: normal;
+	font-family: 'ChunkFive';
+}
+
+.info p {
+	line-height: 1.2em;
+}
+
+.info p span {
+	display: inline-block;
+	padding: 10px;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+.info span a {
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #463022;
+	color: #fbf6d7;
+}
+
+.info a:hover {
+	border-bottom: none;
+	background: #fbf6d7;
+	color: #463022;
+}
+
+.info span a + a + a {
+	margin-bottom: 20px;
+}
+
+.news {
+	width: auto;
+    margin: 30px auto;
+    padding: 10px 20px 20px 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	background: #fbf6d7;
+	color: #664631;
+}
+
+.news h4 {	
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-family: 'ChunkFive';
+}
+
+.news a {
+	color: #463022;
+	border-bottom: 2px dotted #463022;
+	font-family: inherit;
+}
+
+.news a:hover {
+	border-bottom: 2px dotted #463022;
+}
+
+div.footer {
+	clear: both;
+	position: relative;
+    overflow-x: hidden;
+	margin-top: 30px;
+	margin-right: -20px;
+	margin-left: -20px;
+	padding: 20px;
+	border-top: 7px solid #664631;
+	text-align: center;
+	background: url(img/cakebk.jpg) repeat top left;
+	color: #664631;
+}
+
+div.footer a {
+	color: #463022;
+	border-bottom: 2px dotted #463022;
+}
+
+div.footer a:hover {
+	border-bottom: 2px dotted #463022;
+}
+	
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="js/cycle.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx:      'turnDown', 
+    	speed:    3000, 
+    	timeout:  2000,
+    	pause:  1
+	});
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23732211-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 
+'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; 
+s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+  var _kmq = _kmq || [];
+  function _kms(u){
+    setTimeout(function(){
+      var s = document.createElement('script'); var f = 
+document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true;
+      s.src = u; f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  
+_kms('//i.kissmetrics.com/i.js');_kms('//doug1izaerwt3.cloudfront.net/503b6abfc3c74e4d997bf2f74518d34d8b8f3b22.1.js');
+</script>
+</head>
+
+<body>
+
+<div class="header">
+	<h1>3-Layer-Cake Prototype</h1>
+	<h2>A framework for creating multi-layered, annotated, web-based protoypes using HTML, CSS and JavaScript.</h2>
+</div>
+
+<div class="content">
+	<div class="info">
+		<h3>Wireframe &gt; Design &gt; Annotations</h3>
+		<p>Create web prototypes in code that enable <span>easy design view switching</span> between wireframe, the full design and the annotated design.</p>
+		<p>Use the <em>3-Layer-Cake Prototype</em> framework to <span>insert dynamically-numbered annotations</span> and a corresponding notes panel that provide <span>in-browser documentation</span> of content and functionality for clients and business stakeholders.</p>
+		
+		<!-- <p>And if you're an information architect, user experience designer, or other web design professional just getting started with coding, use this commented, one-page prototype as a starting point and canvas for experimentation.</p> -->
+		
+		<span class="links">
+			<a href="3LayerPrototype_v1.0.zip">Download .ZIP file (119 KB)</a>
+			<a href="http://www.jenmatson.com/3layer/example/">View sample prototype</a>
+			<a href="http://www.slideshare.net/nstop/webnative-ux-design-prototyping-with-html-css-and-jquery">View companion slide presentation</a>
+		</span>
+	
+		<div class="news">
+			<p><h4>Blog post:</h4> <a href="/blog/?p=30">Baking a 3-Layer-Cake Prototype</a></p>
+		</div>
+		
+		<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="nstop">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	</div>
+	
+	<div class="slideshow"> 
+    	<img src="img/3layer-sketchy-screen.jpg" width="700" height="433" alt="[prototype screenshot: sketchy wireframe]"> 
+    	<img src="img/3layer-design-screen.jpg" width="700" height="433" alt="[prototype screenshot: design]"> 
+    	<img src="img/3layer-annotated-screen.jpg" width="700" height="433" alt="[prototype screenshot: annotated design]">
+	</div>
+	
+</div>
+
+<div class="footer">
+	<p><em>3-Layer-Cake Prototype</em> &copy; Copyright <a href="http://www.jenmatson.com">Jen Matson</a>. This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+	<p>Last updated: Jul 12, 2011</p>
+</div>
+
+</body>
+</html>

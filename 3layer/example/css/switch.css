@@ -1,0 +1,159 @@
+/* // DESIGN VIEW */
+/* // These styles are the default for the switcher & panel only. */
+/* // Style and structure info for the full design should be in structure.css and style.css. */
+
+body #panel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 995;
+}
+
+body #switcher {
+	margin-right: 10px;
+	text-align: right;
+}
+
+body #notes {
+	display: none;
+	margin-top: 20px;
+	border: 2px solid #fff;
+	background: #fff;
+}
+
+body #tools {
+	visibility: hidden;
+}
+
+/* // SKETCHY VIEW */
+/* // These styles "sketchify" a design, to switch focus to content & functionality. */
+/* // If creating sketchy version before fully-designed version, put structural info in structure.css. */
+
+/* apply a handwritten-looking font to all page text */
+body.sketchy, body.sketchy header h1, body.sketchy header, body.sketchy article h2, body.sketchy nav, body.sketchy form, body.sketchy #submit {
+	font-family: 'Scoder Hand', 'Marker Felt', 'Shadows Into Light', cursive;
+}
+
+/* give all elements the same gray background */
+body.sketchy * { background: #ccc; }
+
+/* ...except select elements from wireframe */
+body.sketchy #content { background: transparent; }
+body.sketchy #email { background: #fff; }
+body.sketchy #submit { background: #666; }
+body.sketchy nav ul li ul li a { background: rgba(40,40,40,.7); }
+body.sketchy nav ul li a:hover { background: rgba(102,102,102,.9); }
+
+/* ...and except the style-switcher element */
+body.sketchy #panel, body.sketchy #panel * { background: transparent; }
+
+/* apply a sketchy border to elements bearing class "border" */
+body.sketchy .border {
+	-webkit-border-image: url(../img/sketch_tb.gif) 3 3 3 3 stretch stretch;
+	-moz-border-image: url(../img/sketch_tb.gif) 3 3 3 3 stretch stretch;
+	border-image: url(../img/sketch_tb.gif) 3 3 3 3 stretch stretch;
+	border-width: 4px;
+}
+
+/* assorted stylistic tweaks to simplify wireframe presentation in sketchy mode */
+
+body.sketchy header h1 {
+	margin-top: 10px;
+	font-size: 62px;
+	color: #2d2d2d;
+	-webkit-text-fill-color: #2d2d2d;
+	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 2.00px;
+}
+
+body.sketchy header form {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+body.sketchy article {
+	width: 615px;
+}
+
+body.sketchy .pic,body.sketchy .caption {
+	background: #999;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+body.sketchy .caption {
+	margin-top: 345px;
+	background-color: white;
+}
+
+body.sketchy aside {
+	clear: both;
+	margin-top: -130px;
+	padding-bottom: 25px;
+	border: 5px solid #2d2d2d;
+}
+
+/* // ANNOTATIONS VIEW */
+/* // These styles are for the annotations panel and numbered labels. */
+
+/* un-center the page layout to accommodate annotations panel */
+body.annotations {
+	margin: 0 0 0 25px;
+}
+
+/* apply styling to the annotations panel */
+body.annotations #notes {
+	display: block;
+	width: 290px;
+	height: auto;
+	margin: 10px;
+	padding-top: 35px;
+	border: 2px solid #666;
+	background: rgba(255,255,204,.8);
+	font-size: 12px;
+	text-align: center;
+}
+
+body.annotations #notes h4 {
+	margin: -22px 0 5px 10px;
+	font-size: 18px;
+	text-align: left;
+}
+
+body.annotations ol {
+	margin-left: 35px;
+	list-style-type: decimal;
+	text-align: left;
+}
+
+body.annotations ol li {
+	padding: 8px 8px 8px 3px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/* increment a counter for all page elements bearing class "x" */
+body.annotations .x {
+	counter-increment: foo;
+}
+
+/* make each counter number appear as generated content, and
+   show before the start of each element bearing class "x" */
+body.annotations .x:before {
+	content: counter(foo); /* set the counter */
+	counter-increment: foo 0; /*make it start with "1" */
+	display: block;
+	position: absolute;
+	width: auto;
+	height: auto;
+	margin-left:-25px; /* offset the labels slightly */
+	padding: 5px 5px 3px 5px;
+	-webkit-border-radius: 3px
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	background: #ea962a; /* orange background */
+	color: #fff; /* white text */
+}

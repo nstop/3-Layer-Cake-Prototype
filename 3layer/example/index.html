@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>3-Layer-Cake Prototype :: Cupcake-A-Riffic</title>
+<style media="all"> @import url(css/switch.css); </style>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/structure.css">
+<style>
+/* add page-specific styles here as needed */
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="js/switch.js"></script>
+<script src="js/global.js"></script>
+<script>
+	$(document).ready(setupThePage);
+</script>
+</head>
+
+<body class="sketchy">
+
+<header class="border x">
+	<h1>Cupcake-a-riffic</h1>
+	<form action="#" id="signup" class="x">
+		<label for="email">Join our mailing list!</label>
+		<input type="email" name="email" id="email" class="">
+		<input type="submit" value="Sign Up" id="submit">
+	</form>
+	<div id="confirm" style="display:none;">
+		You have been added to our email list - thank you!
+	</div>
+</header>
+
+<div id="content" class="x">
+	<nav class="border x">
+		<ul class="first">
+			<li class="firstitem"><a href="#">Home</a></li>
+			<li class="active"><a class="toplevel" href="#">Cupcake Flavors</a>
+				<ul>
+					<li><a href="#">Chocolate Chocolate</a></li>
+					<li class="secondlevel"><a href="#" class="active x">Chocolate Raspberry</a></li>
+					<li><a href="#">Lemon Lilac</a></li>
+					<li><a href="#">Mocha Swirl</a></li>
+					<li><a href="#">Pink Frost</a></li>
+					<li><a href="#">Vanilla Bean</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Place an Order</a></li>
+			<li><a href="#">Special Events</a></li>
+			<li><a href="#">Store Locations</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+	
+	<article class="border x">
+		<h2>Chocolate Raspberry</h2>
+		<div id="chocrasp" class="pic border x">
+			<p class="caption x">One freshly-frosted regular cupcake</p>
+		</div>
+		<p>New for summer!  Start with a base of rich, devil's food chocolate cake. Drop a spoonful of jam made from Skagit Valley raspberries in the center.  We top it off with a pair of fresh raspberries sitting atop a generous swirl of chocolate buttercream frosting.</p>
+		<p>Available in both regular &amp; mini sizes.</p>
+		<aside class="x">
+			<h3><em>Limited Time Offer:</em>Buy 2, Get 10 Free!<a href="#" id="details">See details</a></h3>
+			<p id="offer" style="display:none;">That's right, we're giving them away!  We want to hook you on our irresistibly delicious cupcakes.  Buy two regular-sized Chocolate Raspberry cupcakes and get an ten mini cupcakes of any flavor for FREE.  Just mention this offer when you place your order.  Offer expires 12/12/12.</p>
+		</aside>
+	</article>
+
+</div>
+
+<footer class="border x">
+	<p>&copy; 2011 The Cupcake-a-riffic Corp</p>
+</footer>
+
+<div id="panel">
+
+	<div id="switcher">
+		<form action="#">
+			<fieldset>
+				<select id="views">
+					<option value="sketchy">Sketchy view</option>
+					<option value="default">Design view</option>
+					<option value="annotations">Annotations view</option>
+				</select>
+			</fieldset>
+		</form>
+	</div>
+	
+	<div id="notes">
+		<h4>Page Annotations</h4>
+		<ol>
+			<li>Page heading, including company logo, which links back to the home page.</li>
+			<li>Email subscription form.  User enters email address, clicks on "Sign Up" button to be added to company mailing list.  Need to add form validation for blank or invalid email addresses; a customized error message should display upon submit in those instances.  If submission is succesful, display a confirmation message.</li>
+			<li>Main site navigation, present on every page.</li>
+			<li>Top-level navigation item.</li>
+			<li>Second-level navigation item.  This one is highlighted, as per styling (font color, nav item bar width).</li>
+			<li>Product title.  Should always match the title shown in the selected nav item, to the left.</li>
+			<li>Product image.  Picture of the specific cupcake flavor or style.</li>
+			<li>Product image caption.  Brief copy accompanying the photo.</li>
+			<li>Special offer module.  Element advertising any special offers with a title, brief description, and link to learn more.  Clicking on the link will expand the module, revealing the text of the offer details.</li>
+			<li>Footer bar.  Where the copyright statement and any other legal fine print should go.</li>
+		</ol>
+	</div>
+
+</div>
+
+</body>
+
+</html>
