@@ -1,4 +1,3 @@
-===========================================================================
 3-Layer-Cake Prototype by Jen Matson
 
 http://jenmatson.com/3layer/
@@ -6,8 +5,8 @@ http://jenmatson.com/3layer/
 Contact: hi@jenmatson.com or twitter.com/nstop
 
 Last updated: July 12, 2011
-===========================================================================
 
+====
 
 DESCRIPTION
 
