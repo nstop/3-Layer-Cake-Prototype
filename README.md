@@ -19,6 +19,7 @@ CONTENTS
 
 This package contains the following:
 
+```
 3layercake				// Top-level directory for the prototype site
 	css				// Directory for stylesheets
 		reset.css		// Resets all CSS defaults to reduce browser inconsistencies
@@ -40,7 +41,7 @@ This package contains the following:
 		switch.js		// JavaScript file for style-switching functionality
 	README.txt			// This here file.
 	template.html			// Generic, content-free page template.
-
+```
 
 ADDITIONAL READING
 
